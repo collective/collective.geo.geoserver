@@ -1,0 +1,46 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 01\n"
+"POT-Creation-Date: 2013-04-03 13:50+0000\n"
+"PO-Revision-Date: 2013-04-03 13:50+0000\n"
+"Last-Translator: Cippino <cippinofg@gmail.com>\n"
+"Language-Team: IT <cippinofg@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: it\n"
+"Language-Name: Italiano\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.geo.geoserver\n"
+
+#. Default: "CQL filter for maps information."
+#: ../content/geoquery.py:52
+msgid "help_cql_filter"
+msgstr "Filtro CQL per discernere tra i dati del layer."
+
+#. Default: "Select a layer from the list."
+#: ../content/geoquery.py:28
+msgid "help_layer"
+msgstr "Seleziona un layer da mostrare."
+
+#. Default: "Spatial Reference Identifier: usually EPGS:4326 (WGS84)"
+#: ../content/geoquery.py:39
+msgid "help_srid"
+msgstr "RID di visualizzazione, tipicamente EPGS:4326 (WGS84)"
+
+#. Default: "CQL Filter"
+#: ../content/geoquery.py:51
+msgid "label_cql_filter"
+msgstr "Filtro CQL"
+
+#. Default: "Layer"
+#: ../content/geoquery.py:27
+msgid "label_layer"
+msgstr "Layer"
+
+#. Default: "SRID"
+#: ../content/geoquery.py:38
+msgid "label_srid"
+msgstr "SRID"
+

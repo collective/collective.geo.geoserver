@@ -6,7 +6,9 @@
     i18n_domain="collective.geo.geoserver">
 
   <five:registerPackage package="." initialize=".initialize" />
-
+  
+  <include package=".browser" />
+  
   <genericsetup:registerProfile
       name="default"
       title="collective.geo.geoserver"
@@ -19,5 +21,20 @@
 
   <five:deprecatedManageAddDelete
         class=".content.geoquery.GeoQuery" />
+
+  <utility
+      provides=".interfaces.IGeoServer"
+      factory=".utilities.GeoServer"/>
+  
+  <utility
+      factory=".vocabularies.layers_vocabulary"
+      name="layers_vocabulary"
+      provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+      factory=".vocabularies.srid_vocabulary"
+      name="srid_vocabulary"
+      provides="zope.schema.interfaces.IVocabularyFactory" />
+
   
 </configure>

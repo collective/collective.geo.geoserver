@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<object name="portal_properties" meta_type="Plone Properties Tool">
+ <object name="geoserver_connector" meta_type="Plone Property Sheet">
+  <property name="title">GeoServer Connector</property>
+  <property name="host" type="string">localhost</property>
+  <property name="port" type="int">9001</property>
+  <property name="format"
+     type="string">application%2Fvnd.google-earth.kml%2Bxml</property>
+  <property name="wms_path" type="string">/geoserver/%s/wms</property>
+  <property name="ows_path" type="string">/geoserver/ows</property>
+  <property name="query_capabilities" type="lines">
+   <element value="service=wms"/>
+   <element value="version=1.3.0"/>
+   <element value="request=GetCapabilities"/>
+  </property>
+ </object>
+</object>

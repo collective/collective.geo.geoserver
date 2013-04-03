@@ -1,5 +1,22 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser">
+    
+  <browser:page
+      for="collective.geo.geoserver.interfaces.IGeoQuery"
+      name="base_view"
+      class=".geoquery_view.GeoQueryView"
+      layer = "collective.geo.kml.interfaces.IGeoKmlLayer"
+      template = "templates/geoquery_view.pt"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      for="collective.geo.geoserver.interfaces.IGeoQuery"
+      name="kml-document"
+      class=".geoquery_view.KMLDocument"
+      layer = "collective.geo.kml.interfaces.IGeoKmlLayer"
+      permission="zope2.View"
+      />
 
 </configure>

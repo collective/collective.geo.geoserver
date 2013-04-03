@@ -6,7 +6,8 @@
     i18n_domain="collective.geo.geoserver">
 
   <five:registerPackage package="." initialize=".initialize" />
-  
+
+  <include package="collective.geo.kml" />  
   <include package=".browser" />
   
   <genericsetup:registerProfile

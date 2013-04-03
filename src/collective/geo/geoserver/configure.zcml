@@ -9,6 +9,7 @@
 
   <include package="collective.geo.kml" />  
   <include package=".browser" />
+  <include file="resources.zcml" />
   
   <genericsetup:registerProfile
       name="default"

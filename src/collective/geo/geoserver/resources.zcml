@@ -1,0 +1,13 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="collective.geo.geoserver">
+
+
+  <browser:resourceDirectory
+    name="cgg_icons"
+    directory="resources/icons"
+    />
+
+
+</configure>

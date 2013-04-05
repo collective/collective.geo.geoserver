@@ -7,3 +7,5 @@ TODO
 
 - align geoquery content to the same interface with a collective.geo.contentlocations
   to allow to aggregate the content
+
+- create a configlet

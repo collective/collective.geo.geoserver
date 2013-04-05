@@ -6,7 +6,7 @@ version = '0.1'
 setup(name='collective.geo.geoserver',
       version=version,
       description="Content for visualize a geoserver layer,",      
-      long_description=long_description,      long_description=open(
+      long_description=open(
           "README.rst").read() + "\n" + open(
               os.path.join("docs", "HISTORY.txt")).read(),
 

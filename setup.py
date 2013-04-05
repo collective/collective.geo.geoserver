@@ -42,7 +42,6 @@ setup(name='collective.geo.geoserver',
           'setuptools',
           'BeautifulSoup',          
           'collective.geo.kml',
-          'gsconfig',
       ],
       extras_require={'test': ['plone.app.testing']},
       entry_points="""

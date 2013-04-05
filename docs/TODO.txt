@@ -1,0 +1,9 @@
+TODO
+====
+
+- allow to choice more than a layer for page
+
+- find a better way to interface with geoserver (gsconfig is not the way)
+
+- align geoquery content to the same interface with a collective.geo.contentlocations
+  to allow to aggregate the content

@@ -3,35 +3,30 @@ import os
 
 version = '0.1'
 
-long_description = (
-    open('README.txt').read()
-    + '\n' +
-    'Contributors\n'
-    '============\n'
-    + '\n' +
-    open('CONTRIBUTORS.txt').read()
-    + '\n' +
-    open('CHANGES.txt').read()
-    + '\n')
-
 setup(name='collective.geo.geoserver',
       version=version,
-      description="Content for visualize a geoserver layer,",
-      long_description=long_description,
+      description="Content for visualize a geoserver layer,",      
+      long_description=long_description,      long_description=open(
+          "README.rst").read() + "\n" + open(
+              os.path.join("docs", "HISTORY.txt")).read(),
+
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
         "Environment :: Web Environment",
-        "Framework :: Plone",
+        "Framework :: Plone",        
         "Operating System :: OS Independent",
         "Programming Language :: Python",
         "Programming Language :: Python :: 2.6",
+        "Programming Language :: Python :: 2.7",
+        "Topic :: Internet",
+        "Topic :: Scientific/Engineering :: GIS",
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
-      keywords='',
-      author='',
-      author_email='',
-      url='http://svn.plone.org/svn/collective/',
+      keywords='Zope Plone GIS KML Geoserver',
+      author='Federico Cippino Guizzardi',
+      author_email='cippinofg@gmail.com',
+      url='https://github.com/collective/collective.geo.geoserver',
       license='gpl',
       packages=find_packages('src'),
       package_dir={'': 'src'},

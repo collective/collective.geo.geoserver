@@ -7,8 +7,10 @@ import urllib2
 from Products.CMFCore.utils import getToolByName
 
 from plone.memoize import forever
-
-from zope.app.component.hooks import getSite
+try:
+    from zope.app.component.hooks import getSite
+except:
+    from zope.component.hooks import getSite
 
 from BeautifulSoup import BeautifulSoup
 

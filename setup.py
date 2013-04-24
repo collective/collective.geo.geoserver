@@ -38,6 +38,7 @@ setup(name='collective.geo.geoserver',
           'BeautifulSoup',          
           'collective.geo.kml',
           'plone.app.testing',
+          'zope.component'
       ],
       extras_require={'test': ['plone.app.testing']},
       entry_points="""

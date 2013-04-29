@@ -14,6 +14,10 @@ except:
 
 from BeautifulSoup import BeautifulSoup
 
+import logging
+
+logger=logging.getLogger("collective.geo.geoserver.utilities")
+
 class GeoServer(object):
     implements(IGeoServer)
 
@@ -39,6 +43,8 @@ class GeoServer(object):
         return self._getProperty('format','application%2Fvnd.google-earth.kml%2Bxml')
 
     def _getWMSPath(self,name):
+        if name is None:
+            name=''
         return self._getProperty('wms_path','/geoserver/%s/wms')%name
 
     def _getOWSPath(self):
@@ -48,11 +54,17 @@ class GeoServer(object):
         return self._getProperty('query_capabilities',('service=wms','version=1.3.0','request=GetCapabilities'))
 
     def _makeCall(self,url):
+        logger.debug('Calling: %s'%url)
         conn=urllib2.urlopen(url)
         return conn.read()
 
     def getMap(self,layer=None,srid=None,cql_filter=''):
-        ws,ly=layer.split(':')
+        try:
+            ws,ly=layer.split(':')
+        except ValueError:
+            ws=None
+            ly=layer
+        logger.debug('Ws: %s  - Ly: %s'%(ws,ly))
         query=dict(bbox="-90,-90,90,90",
                    request="GetMap",
                    format=self.getFormat(),
@@ -69,7 +81,7 @@ class GeoServer(object):
         qrystr='&'.join(['%s=%s'%item for item in query.items()])
 
         url="http://%s:%s%s?%s" % (host,port,path_query,qrystr)
-
+        
         return self._makeCall(url)
 
     def getLayers(self):
@@ -78,7 +90,7 @@ class GeoServer(object):
         path_query=self._getOWSPath()
         qrystr='&'.join(self._getQueryCapabilities())
 
-        url='http://%s:%s%s?%s'%(host,port,path_query,qrystr)
+        url='http://%s:%s%s?%s'%(host,port,path_query,qrystr)        
         content=self._makeCall(url)
         parser=BeautifulSoup(content)
         return [i.find('name').text for i in parser.findAll('layer',queryable="1")]

@@ -9,3 +9,5 @@ TODO
   to allow to aggregate the content
 
 - create a configlet
+
+- support for raster from geoserver

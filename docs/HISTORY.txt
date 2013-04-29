@@ -1,6 +1,10 @@
 Changelog
 =========
 
+0.2 (unreleased)
+
+- Added support for group layers
+
 0.1 (2013-04-05)
 
 - PLOG2013 release [cippino]

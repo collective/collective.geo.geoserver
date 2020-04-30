@@ -15,6 +15,21 @@ Requirements
 * `collective.geo.kml`_
 * `Geoserver`_
 
+
+Translations
+============
+
+This product has been translated into
+
+- Spanish.
+
+- Italian.
+
+You can contribute for any message missing or other new languages, join us at 
+`Plone Collective Team <https://www.transifex.com/plone/plone-collective/>`_ 
+into *Transifex.net* service with all world Plone translators community.
+
+
 Installation
 ============
 

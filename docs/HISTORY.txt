@@ -2,10 +2,14 @@ Changelog
 =========
 
 0.2 (unreleased)
+----------------
 
+- Updated i18n support
+  [macagua]
 - Added support for group layers
 
 0.1 (2013-04-05)
+----------------
 
 - PLOG2013 release [cippino]
 

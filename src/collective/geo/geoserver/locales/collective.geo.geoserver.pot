@@ -3,10 +3,10 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
-"Project-Id-Version: 0.1\n"
-"POT-Creation-Date: 2013-04-03 13:50+0000\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-04-30 12:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
-"Last-Translator: Cippino <cippinofg@gmail.com>\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -17,33 +17,88 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.geo.geoserver\n"
 
+#: ../interfaces.py:16
+msgid "An ip or name"
+msgstr ""
+
+#: ../profiles/default/types/GeoQuery.xml
+msgid "Content to show a geoserver layer"
+msgstr ""
+
+#: ../interfaces.py:39
+msgid "Format"
+msgstr ""
+
+#: ../interfaces.py:40
+msgid "Format of results "
+msgstr ""
+
+#: ../profiles/default/types/GeoQuery.xml
+msgid "GeoQuery"
+msgstr ""
+
+#: ../configure.zcml:20
+msgid "Installs the collective.geo.geoserver package"
+msgstr ""
+
+#: ../interfaces.py:21
+msgid "Port"
+msgstr ""
+
+#: ../interfaces.py:33
+msgid "REST Path"
+msgstr ""
+
+#: ../interfaces.py:34
+msgid "Rest path for queries"
+msgstr ""
+
+#: ../interfaces.py:15
+msgid "Server"
+msgstr ""
+
+#: ../interfaces.py:22
+msgid "Server Port"
+msgstr ""
+
+#: ../interfaces.py:28
+msgid "The wms path, domain excluded"
+msgstr ""
+
+#: ../interfaces.py:27
+msgid "WMS Path"
+msgstr ""
+
+#: ../configure.zcml:20
+msgid "collective.geo.geoserver"
+msgstr ""
+
 #. Default: "CQL filter for maps information."
-#: ../content/geoquery.py:52
+#: ../content/geoquery.py:61
 msgid "help_cql_filter"
 msgstr ""
 
 #. Default: "Select a layer from the list."
-#: ../content/geoquery.py:28
+#: ../content/geoquery.py:29
 msgid "help_layer"
 msgstr ""
 
 #. Default: "Spatial Reference Identifier: usually EPGS:4326 (WGS84)"
-#: ../content/geoquery.py:39
+#: ../content/geoquery.py:43
 msgid "help_srid"
 msgstr ""
 
 #. Default: "CQL Filter"
-#: ../content/geoquery.py:51
+#: ../content/geoquery.py:60
 msgid "label_cql_filter"
 msgstr ""
 
 #. Default: "Layer"
-#: ../content/geoquery.py:27
+#: ../content/geoquery.py:28
 msgid "label_layer"
 msgstr ""
 
 #. Default: "SRID"
-#: ../content/geoquery.py:38
+#: ../content/geoquery.py:42
 msgid "label_srid"
 msgstr ""
-
